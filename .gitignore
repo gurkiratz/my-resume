@@ -1,0 +1,27 @@
+# LaTeX intermediate and output files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Ignore all PDFs except main.pdf
+# *.pdf
+# !main.pdf
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

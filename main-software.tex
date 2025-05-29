@@ -1,0 +1,156 @@
+% ============================================
+% Resume Template
+% Created by Aryan Khurana
+% github.com/AryanK1511
+% ============================================
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{ifthen}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage[colorlinks=true, urlcolor=primaryColor]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[margin=0.5in, includefoot]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2\ }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+{\LARGE \textbf{Gurkirat Singh}}\\[0.5em]
+\small
+437-677-3928 •
+\hrefWithoutArrow{mailto:singh.gurkirat2707@gmail.com}{singh.gurkirat2707@gmail.com} •
+\hrefWithoutArrow{https://linkedin.com/in/gurkiratz/}{linkedin.com/in/gurkiratz} •
+\hrefWithoutArrow{https://github.com/gurkiratz}{github.com/gurkiratz} •
+\hrefWithoutArrow{https://gurkiratz.co}{gurkiratz.co}\\[0.6em]
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Computer Programming \& Analysis}{Toronto, ON}
+      {Humber Polytechnic, Dean’s Honour List Recipient (2023, 2024)}{Sept 2023 -- Dec 2026}
+  \resumeSubHeadingListEnd
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical Support Analyst (Co-op)}{Toronto, ON}
+      {OPTrust}{January 2025 -- August 2025}
+      \resumeItemListStart
+        \resumeItemNH{Deployed an enterprise-grade Customer Support Interface using \textbf{Microsoft Copilot Studio}, reducing ticket volume by \textbf{60\%} and saving \textbf{10,000+ hours} in manual triaging.}
+        \resumeItemNH{Developed scripts in \textbf{Microsoft Intune} for \textbf{automated deployment} of Windows 10/11 updates across \textbf{500+ devices}, minimizing downtime and enhancing IT compliance.}
+        \resumeItemNH{Designed and implemented a new \textbf{IT Service Catalogue} with request/approval automation using \textbf{Microsoft Power Automate}, improving customer satisfaction by \textbf{70\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Residence Admissions Assistant}{Toronto, ON}
+      {Humber Polytechnic}{April 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItemNH{Streamlined resident reporting using \textbf{StarRez} and \textbf{StarQL}, boosting data efficiency and report accuracy.}
+        \resumeItemNH{Analyzed large-scale records via \textbf{Power BI} and \textbf{Tableau}, ensuring data-driven decision-making.}
+        \resumeItemNH{Provided front-line technical and procedural support via phone and email, ensuring smooth admissions workflows.}
+        \resumeItemNH{Actively monitored ticketing systems and ensured timely resolution of residence-related service requests.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Web Development Intern}{Remote}
+      {100xDevs}{May  2023 -- Sept 2023}
+      \resumeItemListStart
+        \resumeItemNH{Developed and optimized the web app using \textbf{Next.js, TypeScript and tRPC}, improving page load speed by \textbf{75\%} with SSR \& ISR.}
+        \resumeItemNH{Analyzed large-scale records via Power BI and Tableau, ensuring data-driven decision-making.}
+        \resumeItemNH{Maintained structured user and media data with \textbf{PostgreSQL} and \textbf{Prisma ORM}.}
+        \resumeItemNH{Optimized video streaming architecture using \textbf{FFmpeg} \& \textbf{Cloudflare}, decreasing buffering by \textbf{40\%}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/gurkiratz/earth-lens}{Earth Lens (Best Sustainability AI Hack @ GenAI Genesis 2025)}} {\\
+      \textbf{Technologies:} Next.js, Flask, Firestore, Google Cloud, Tensorflow, Vercel AI SDK, Twillio API \\
+     Earth Lens is an AI-powered platform that predicts and mitigates natural disasters using real-time satellite, weather, and social media data.}
+
+    \resumeSubItem{\href{https://github.com/example/project2}{Project Two Title (Achievement Mention @ Event 202X)}} {\\
+      \textbf{Technologies:} Ullamcorper, Vestibulum, Euismod, Magna, Faucibus, Fermentum, Integer \\
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.}
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=*, itemsep=-2pt]
+    \item \textbf{Programming Languages:} Python, JavaScript/TypeScript, Golang, Java, Bash
+    \item \textbf{Cloud \& Devops}: Google Cloud, AWS, Azure, Docker, Kubernetes, Terraform, Jenkins, Cloudflare
+    \item \textbf{SRE \& Monitoring:} Adipiscing, Elit, Integer, Tristique, Magna, Nibh
+    \item \textbf{Automation, IaC \& Cloud:} Ullamcorper, Faucibus, Pulvinar, Vehicula, Euismod, Gravida, Vulputate, Ligula, Ornare
+    \item \textbf{Backend \& APIs:} Curabitur, Dictum, Pharetra, Vestibulum, Tempor, Sagittis, Sodales, Convallis
+    \item \textbf{Databases \& Storage:} Pellentesque, Habitasse, Platea, Dictumst, Aliquam, Semper
+    \item \textbf{Other Competencies:} Sed, Nec, Mi, Posuere, Ultricies, Varius
+  \end{itemize}
+
+\section{Other Initiatives and Achievements}
+  \resumeSubHeadingListStartBullets
+    \resumeSubItem{Hackathons \& Competitions: }
+      {1st Place @ LoremIpsumHack 2024, Runner-Up @ DolorSitJam 2023, Honorable Mention @ ConsecteturCode 2022, Top 5 Finalist @ ElitHack 2021.}
+    \resumeSubItem{Academic: }
+      {Multiple-time recipient of the Magna Lorem Honor List for academic excellence in sit amet cursus.}
+    \resumeSubItem{Open Source: }
+      {Contributed to open projects such as \href{https://github.com/example/project1}{ProjectOne}, \href{https://github.com/example/toolkit}{ToolkitX}, \href{https://github.com/example/libcore}{LibCore}, \href{https://github.com/example/infra-tools}{InfraTools}.}
+    \resumeSubItem{Leadership: }
+      {Led workshops and tutorials as part of the Ipsum Developers Group; shared knowledge via \href{https://www.youtube.com/@loremipsumdev}{YouTube Channel} and \href{https://lorem.hashnode.dev}{Tech Blog}.}
+    \resumeSubItem{Open Source: }
+    {Contributed to open projects such as \href{https://github.com/example/project1}{ProjectOne}, \href{https://github.com/example/toolkit}{ToolkitX}, \href{https://github.com/example/libcore}{LibCore}, \href{https://github.com/example/infra-tools}{InfraTools}.}
+    \resumeSubItem{Leadership: }
+    {Led workshops and tutorials as part of the Ipsum Developers Group; shared knowledge via \href{https://www.youtube.com/@loremipsumdev}{YouTube Channel} and \href{https://lorem.hashnode.dev}{Tech Blog}.}
+  \resumeSubHeadingListEnd    
+
+\end{document}
