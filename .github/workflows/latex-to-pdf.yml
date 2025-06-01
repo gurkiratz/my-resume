@@ -31,21 +31,13 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main_software.tex
-          args: -shell-escape -interaction=nonstopmode -file-line-error
-      
-      - name: Upload PDF
-        uses: actions/upload-artifact@v3
+          latexmk_shell_escape: true     # Enable shell escape if needed (e.g., for minted)
+          latexmk_use_xelatex: true      # Use XeLaTeX (optional, remove if using pdflatex)
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+          post_compile: "latexmk -c"     # Clean up temporary files
+        
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: generated-pdf
-          path: |
-            *.pdf
-            *.aux
-            *.log  # Optional: include logs if needed
-            
-      - name: Commit PDF to repo
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add *.pdf
-          git commit -m "Auto-generated PDF from LaTeX" || echo "No changes to commit"
-          git push
+          name: main_software.pdf
+          path: main_software.pdf  # Must match root_file name
